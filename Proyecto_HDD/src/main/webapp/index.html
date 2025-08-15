@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio Épica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            color: #00ffff;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+            }
+            to {
+                text-shadow: 0 0 20px #00ffea, 0 0 40px #00ffea, 0 0 60px #00ffea;
+            }
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 40px;
+            animation: fadeIn 2s ease;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #00ffff;
+            color: #000;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #00cfcf;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a la Zona Épica</h1>
+    </header>
+
+    <div class="content">
+        <p>Explora el poder del diseño web moderno con HTML, CSS y JavaScript.</p>
+        <button class="btn" onclick="mostrarMensaje()">Haz clic para iniciar</button>
+    </div>
+
+    <footer>
+        © 2025 Creado con 💻 y ☕ por TuNombre
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Bienvenido al futuro del desarrollo web!");
+        }
+    </script>
+
+</body>
+</html>
+
